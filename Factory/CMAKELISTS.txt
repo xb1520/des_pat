@@ -1,2 +1,3 @@
 message(STATUS "Factory -- " "CMake")
 add_subdirectory(easy)
+add_subdirectory(factory_func)
