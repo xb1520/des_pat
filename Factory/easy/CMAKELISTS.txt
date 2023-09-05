@@ -1,0 +1,15 @@
+message(STATUS "Factory -- " "easy -- " "CMake")
+
+set(CMAKE_CXX_STANDARD 20)
+
+# set(easy_factory_src
+# src/easy.h
+# src/opcode.h
+# )
+
+add_executable(easy_factory  client.cpp)
+
+target_include_directories(easy_factory PRIVATE include)
+
+
+add_subdirectory(test)
