@@ -1,4 +1,4 @@
-﻿#include <easy.h>
+﻿#include <simple.h>
 #include <iostream>
 
 
@@ -8,7 +8,7 @@ int main()
     char op;
     std::cout << "请输入一个表达式(目前支持+-*/):" << std::flush;
     std::cin >> a >> op >> b;
-    auto opcode = EasyFactory<int>::CreateOpCode(op);
+    auto opcode = SimpleFactory<int>::CreateOpCode(op);
     if(!opcode){
         std::cerr << "不合法的操作数..." << std::endl;
         return -1;

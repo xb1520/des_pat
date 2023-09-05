@@ -1,4 +1,0 @@
-message(STATUS "Factory -- " "easy -- " "test -- " "CMake")
-
-
-add_executable(easy_test test.cpp)

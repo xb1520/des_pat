@@ -1,0 +1,3 @@
+message(STATUS "Factory -- " "CMake")
+add_subdirectory(SimpleFactory)
+add_subdirectory(FactoryMethod)

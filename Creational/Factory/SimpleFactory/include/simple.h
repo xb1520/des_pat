@@ -3,7 +3,7 @@
 #include <memory>
 
 template<typename _Ty>
-class EasyFactory
+class SimpleFactory
 {
 public:
     using OpCode = OpCode<_Ty>;
@@ -14,7 +14,7 @@ public:
 
 
 template <typename _Ty>
-inline EasyFactory<_Ty>::POpCode EasyFactory<_Ty>::CreateOpCode(char op)
+inline SimpleFactory<_Ty>::POpCode SimpleFactory<_Ty>::CreateOpCode(char op)
 {
     if(op == '+')return POpCode(new OpAdd<_Ty>());
     if(op == '-')return POpCode(new OpSub<_Ty>());

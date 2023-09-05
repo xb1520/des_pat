@@ -1,0 +1,4 @@
+message(STATUS "Factory -- " "SimpleFactory -- " "test -- " "CMake")
+
+
+add_executable(easy_test test.cpp)
