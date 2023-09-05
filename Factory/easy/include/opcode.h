@@ -46,7 +46,7 @@ struct OpDiv : public OpCode<_Ty>
 {
     _Ty operator()(_Ty a,_Ty b) override{
         if constexpr (std::is_integral_v<_Ty>){
-            throw std::exception("除数不能为0");
+            if(b == 0) throw std::exception("除数不能为0");
         }
         return a / b;
     }
