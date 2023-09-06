@@ -1,0 +1,20 @@
+message(STATUS "Factory -- " "SimpleFactory -- " "CMake")
+
+set(CMAKE_CXX_STANDARD 20)
+
+
+add_executable(AbstractFactory  client.cpp)
+
+target_include_directories(AbstractFactory PRIVATE include)
+
+# 选择Win or Mac
+set(SYSTEM Win)
+# set(SYSTEM Mac)
+
+if(SYSTEM STREQUAL Win)
+target_compile_definitions(AbstractFactory PRIVATE SYSTEM_WIN)
+message(STATUS Win)
+elseif(SYSTEM STREQUAL Mac)
+target_compile_definitions(AbstractFactory PRIVATE SYSTEM_MAC)
+message(STATUS Mac)
+endif()
