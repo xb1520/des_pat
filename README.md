@@ -11,5 +11,7 @@
 - 工厂方法模式（Factory Method Pattern）
 - 抽象工厂模式（Abstract Factory Pattern）
 - 单例模式（Singleton Pattern）
+
+
 结构性：
 - 适配器模式（Adapter Pattern）
