@@ -1,0 +1,11 @@
+message(STATUS "Structural -- " "Adapter -- " "CMake")
+
+set(CMAKE_CXX_STANDARD 20)
+
+
+
+add_executable(Adapter  client.cpp
+src/Adapter.cpp
+)
+
+target_include_directories(Adapter PRIVATE include)

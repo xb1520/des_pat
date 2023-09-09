@@ -1,1 +1,1 @@
-# 行为型设计模式
+# 行为型设计模式（Behavioral Patterns）
