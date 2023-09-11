@@ -15,3 +15,7 @@
 
 结构性：
 - 适配器模式（Adapter Pattern）
+
+
+行为性：
+- 模板方法模式（Template Method Pattern）

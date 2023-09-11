@@ -1,0 +1,10 @@
+message(STATUS "Structural -- " "Template Method -- " "CMake")
+
+set(CMAKE_CXX_STANDARD 20)
+
+
+
+add_executable(Template_Method  client.cpp
+)
+
+target_include_directories(Template_Method PRIVATE include)
