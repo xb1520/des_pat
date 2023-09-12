@@ -19,3 +19,4 @@
 
 行为性：
 - 模板方法模式（Template Method Pattern）
+- 观察者模式（ObServer Pattern）
