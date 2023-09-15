@@ -1,3 +1,4 @@
 
 add_subdirectory(TemplateMethod)
 add_subdirectory(ObServer)
+add_subdirectory(Proxy)
