@@ -1,0 +1,10 @@
+message(STATUS "Structural -- " "Proxy -- " "CMake")
+
+set(CMAKE_CXX_STANDARD 20)
+
+
+
+add_executable(Proxy  client.cpp
+)
+
+target_include_directories(Proxy PRIVATE include)
