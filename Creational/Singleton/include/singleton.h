@@ -1,14 +1,14 @@
 ﻿#pragma once
 #define SINGLETON_INS(_C) _C singleton<_C>::ins{}
+#define FRIEND_INS(TYPE,_C) friend class TYPE<_C>;
 
 class singleton_base
 {
-private:
     singleton_base(const singleton_base&) = delete;
     singleton_base(singleton_base&&) = delete;
     singleton_base& operator=(const singleton_base&) = delete;
     singleton_base& operator=(singleton_base&&) = delete;
-public:
+protected:
     singleton_base() = default;
 };
 
@@ -16,7 +16,9 @@ public:
 template<typename C>
 class singleton : public singleton_base
 {
-private:static C ins;
+    static C ins;
+protected:
+    singleton<C>() = default;
 public:
     static C& instance() noexcept{
         return ins;
