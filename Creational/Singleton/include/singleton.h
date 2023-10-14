@@ -17,8 +17,6 @@ template<typename C>
 class singleton : public singleton_base
 {
     static C ins;
-protected:
-    singleton<C>() = default;
 public:
     static C& instance() noexcept{
         return ins;
